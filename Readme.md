@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Form1.cs](./CS/LineOfBestFit/Form1.cs) (VB: [Form1.vb](./VB/LineOfBestFit/Form1.vb))
+* [Program.cs](./CS/LineOfBestFit/Program.cs) (VB: [Program.vb](./VB/LineOfBestFit/Program.vb))
+<!-- default file list end -->
 # Obsolete - How to implement the best fit function, and apply it to a chart's series
 
 
