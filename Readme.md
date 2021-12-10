@@ -26,7 +26,6 @@ Note that you can also use built-in [Regression Lines](https://docs.devexpress.c
 ## Files to Look At
 
 * [Form1.cs](./CS/LineOfBestFit/Form1.cs) (VB: [Form1.vb](./VB/LineOfBestFit/Form1.vb))
-* [Program.cs](./CS/LineOfBestFit/Program.cs) (VB: [Program.vb](./VB/LineOfBestFit/Program.vb))
 <!-- default file list end -->
 
 ## Documentation
