@@ -12,9 +12,11 @@ This example shows how to perform a custom regression analysis against scatter s
 
 To do so, follow the steps below:
 
-- Create a series (*Series 1* in this example) and [bind it to a data source](https://docs.devexpress.com/WindowsForms/6561/controls-and-libraries/chart-control/provide-data/specify-series-data-members).
+- Create a point series (*Series 1* in this example) and [bind it to a data source](https://docs.devexpress.com/WindowsForms/6561/controls-and-libraries/chart-control/provide-data/specify-series-data-members). This series' data is to be analyzed.
 
-- Create a method that uses a custom formula to perform the regression analysis against the series' points. The method calculates data points used to plot another series (*Line Of Best Fit*).
+- Add a line series (*Line Of Best Fit*) that is used to display the Line of Best Fit.
+
+- Create a method that uses a custom formula to perform the regression analysis against the first series' points. The method calculates data points used to plot the line series.
 
 - In the [ChartControl.BoundDataChanged](https://docs.devexpress.com/WindowsForms/DevExpress.XtraCharts.ChartControl.BoundDataChanged?p=netframework) event handler, call the newly created method for the analyzed series (*Series 1*).
 
