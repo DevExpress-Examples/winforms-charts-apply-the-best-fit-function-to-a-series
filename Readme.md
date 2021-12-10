@@ -16,7 +16,7 @@ To do so, follow the steps below:
 
 - Add a line series (*Line Of Best Fit*) that is used to display the Line of Best Fit.
 
-- Create a method that uses a custom formula to perform the regression analysis against the first series' points. The method calculates data points used to plot the line series.
+- Create a method that uses a custom formula to perform the regression analysis against the first series' points. The method should calculate data points used to plot the line series.
 
 - In the [ChartControl.BoundDataChanged](https://docs.devexpress.com/WindowsForms/DevExpress.XtraCharts.ChartControl.BoundDataChanged?p=netframework) event handler, call the newly created method for the analyzed series (*Series 1*).
 
