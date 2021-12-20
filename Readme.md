@@ -10,8 +10,6 @@ This example shows how to perform a custom regression analysis against scatter s
 
 ![](images/line-of-best-fit.png)
 
-To do so, follow the steps below:
-
 - Create a point series and [bind it to a data source](https://docs.devexpress.com/WindowsForms/6561/controls-and-libraries/chart-control/provide-data/specify-series-data-members). This series' data is to be analyzed.
 
 - Add a line series that will be used to display the Line of Best Fit.
