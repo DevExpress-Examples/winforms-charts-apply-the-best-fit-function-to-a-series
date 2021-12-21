@@ -6,7 +6,7 @@
 
 # How to Implement the Best Fit Function, and Apply it to a Chart's Series
 
-This example shows how to perform a custom regression analysis against scatter series points generated from a data table and plot the line of best fit. 
+This example shows how to perform a custom regression analysis against scatter series points generated from a data table and how to display the Line of Best Fit as illustrated on the image below.
 
 ![](images/line-of-best-fit.png)
 
