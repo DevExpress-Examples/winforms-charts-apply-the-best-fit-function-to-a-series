@@ -3,23 +3,35 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E1300)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
+
+# How to Implement the Best Fit Function, and Apply it to a Chart's Series
+
+This example shows how to perform a custom regression analysis against scatter series points generated from a data table and how to display the Line of Best Fit as illustrated on the image below.
+
+![](images/line-of-best-fit.png)
+
+- Create a point series and [bind it to a data source](https://docs.devexpress.com/WindowsForms/6561/controls-and-libraries/chart-control/provide-data/specify-series-data-members). This series' data is to be analyzed.
+
+- Add a line series that will be used to display the Line of Best Fit.
+
+- Create a method that uses a custom formula to perform the regression analysis against the first series' points. The method should calculate data points used to plot the line series.
+
+- In the [ChartControl.BoundDataChanged](https://docs.devexpress.com/WindowsForms/DevExpress.XtraCharts.ChartControl.BoundDataChanged?p=netframework) event handler, call the newly created method for the analyzed series (*Series 1*).
+
+Note that you can also use built-in [Regression Lines](https://docs.devexpress.com/WindowsForms/6231/controls-and-libraries/chart-control/series/indicators/simple-indicators/regression-lines?p=netframework).
+
 <!-- default file list -->
-*Files to look at*:
+## Files to Look At
 
 * [Form1.cs](./CS/LineOfBestFit/Form1.cs) (VB: [Form1.vb](./VB/LineOfBestFit/Form1.vb))
-* [Program.cs](./CS/LineOfBestFit/Program.cs) (VB: [Program.vb](./VB/LineOfBestFit/Program.vb))
 <!-- default file list end -->
-# Obsolete - How to implement the best fit function, and apply it to a chart's series
 
+## Documentation
 
-<p><strong>[OBSOLETE WARNING] </strong>The approach shown in this example is not applicable in recent versions (v16.1 and later). It is recommended to calculate the "Best Fit" data using the ChartControl.<a href="https://documentation.devexpress.com/#WindowsForms/DevExpressXtraChartsChartControl_BoundDataChangedtopic">BoundDataChanged</a> event handler (see a similar approach shown in the <a href="https://www.devexpress.com/Support/Center/p/T485375">Unhandled runtime error when implementing a custom summary function</a> ticket).<br><br><em>Original description:</em><br>This example demonstrates how to implement the best fit function and apply it to a chart's series.</p>
+* [Indicators](https://docs.devexpress.com/WindowsForms/8913/controls-and-libraries/chart-control/series/indicators) - This topic contains a list of built-in technical indicators that ship with the DevExpress Charts for WinForms.
 
+## More Examples
 
-<h3>Description</h3>
-
-<p>To accomplish this task, it is necessary to manually perform the required data analysis, and then display the corresponding line series within your chart.<br />
-In this example, the approach of registering custom summary functions within a particular chart instance is used to implement all necessary calculations. Also additional calculations are implemented within the summary function in order to determine the correlation coefficient.</p>
-
-<br/>
-
-
+* [How to display a regression line for a series](https://github.com/DevExpress-Examples/how-to-display-a-regression-line-for-a-series-e1494)
+* [How to add a Trend Line to a chart](https://github.com/DevExpress-Examples/how-to-add-a-trend-line-to-a-chart-e1245)
+* [How to draw Fibonacci Arcs, Fans and Retracement for a Stock series](https://github.com/DevExpress-Examples/how-to-draw-fibonacci-arcs-fans-and-retracement-for-a-stock-series-e966)
