@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# How to Implement the Best Fit Function, and Apply it to a Chart's Series
+# Chart for WinForms - How to Implement the Best Fit Function, and Apply it to a Chart's Series
 
 This example shows how to perform a custom regression analysis against scatter series points generated from a data table and how to display the Line of Best Fit as illustrated on the image below.
 
