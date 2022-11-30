@@ -15,7 +15,7 @@ namespace LineOfBestFit
     {
         public static double r;
 
-        private static ISeriesPoint[] GetPointForLinearRegression(Series series, object argument,
+        private static SeriesPoint[] GetPointForLinearRegression(Series series, object argument,
             string[] functionArguments, DataSourceValues[] values, object[] colors)
         {            
             SeriesPoint[] points = new SeriesPoint[2];
@@ -105,7 +105,7 @@ namespace LineOfBestFit
             this.chartControl1.Series.Add(BestFit);
             chartControl1.Series[1].ArgumentDataMember = "MyArg";
             chartControl1.Series[1].ValueDataMembers.AddRange(new string[] { "MyData" });
-            this.chartControl1.Series[1].SummaryFunction = "BESTFIT()";            
+            this.chartControl1.Series[1].NumericSummaryOptions.SummaryFunction = "BESTFIT()";            
             this.textBox1.Text = r.ToString();
 
         }
