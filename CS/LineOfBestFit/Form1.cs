@@ -5,6 +5,8 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using DevExpress.Charts.Native;
+using DevExpress.Utils;
 using DevExpress.XtraCharts;
 
 namespace LineOfBestFit
@@ -12,8 +14,9 @@ namespace LineOfBestFit
     public partial class Form1 : Form
     {
         public static double r;
-        private static SeriesPoint[] GetPointForLinearRegression(Series series, object argument,
-            string[] functionArguments, DataSourceValues[] values)
+
+        private static ISeriesPoint[] GetPointForLinearRegression(Series series, object argument,
+            string[] functionArguments, DataSourceValues[] values, object[] colors)
         {            
             SeriesPoint[] points = new SeriesPoint[2];
 
@@ -91,12 +94,14 @@ namespace LineOfBestFit
             chartControl1.Series[0].ValueDataMembers.AddRange(new string[] { "MyData" });
         }
 
+        
+
         private void button1_Click(object sender, EventArgs e)
         {
 
             Series BestFit = new Series("Line Of Best Fit", ViewType.Line);
             BestFit.ArgumentScaleType = ScaleType.Numerical;
-            BestFit.Label.Visible = false;
+            BestFit.LabelsVisibility = DefaultBoolean.False;
             this.chartControl1.Series.Add(BestFit);
             chartControl1.Series[1].ArgumentDataMember = "MyArg";
             chartControl1.Series[1].ValueDataMembers.AddRange(new string[] { "MyData" });

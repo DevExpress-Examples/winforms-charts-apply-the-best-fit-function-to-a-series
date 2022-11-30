@@ -47,9 +47,7 @@ namespace LineOfBestFit
             // 
             // chartControl1
             // 
-            xyDiagram2.AxisX.Range.SideMarginsEnabled = true;
             xyDiagram2.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram2.AxisY.Range.SideMarginsEnabled = true;
             xyDiagram2.AxisY.VisibleInPanesSerializable = "-1";
             this.chartControl1.Diagram = xyDiagram2;
             this.chartControl1.Location = new System.Drawing.Point(11, 22);
