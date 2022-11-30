@@ -55,8 +55,6 @@ namespace LineOfBestFit
             this.chartControl1.Location = new System.Drawing.Point(11, 22);
             this.chartControl1.Name = "chartControl1";
             series2.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Numerical;
-            pointSeriesLabel2.OverlappingOptionsTypeName = "PointOverlappingOptions";
-            pointSeriesLabel2.Visible = false;
             series2.Label = pointSeriesLabel2;
             series2.Name = "Series 1";
             series2.View = pointSeriesView3;

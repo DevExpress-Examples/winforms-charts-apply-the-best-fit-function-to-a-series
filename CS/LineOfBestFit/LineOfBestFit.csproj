@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -10,6 +10,11 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>LineOfBestFit</RootNamespace>
     <AssemblyName>LineOfBestFit</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -29,12 +34,42 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Charts.v8.2.Core, Version=8.2.8.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1" />
-    <Reference Include="DevExpress.Data.v8.2, Version=8.2.8.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1" />
-    <Reference Include="DevExpress.Utils.v8.2, Version=8.2.8.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1" />
-    <Reference Include="DevExpress.XtraCharts.v8.2, Version=8.2.8.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1" />
-    <Reference Include="DevExpress.XtraCharts.v8.2.UI, Version=8.2.8.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraEditors.v8.2, Version=8.2.8.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1" />
+    <Reference Include="DevExpress.Charts.v13.1.Core, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Charts.v13.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v13.1.Core, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Printing.v13.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.1, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Data.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.1, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Utils.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.1.Wizard, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraCharts.v13.1.Wizard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.1, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraCharts.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v13.1, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraPrinting.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.1.UI, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraCharts.v13.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.1, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraEditors.v13.1.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -63,6 +98,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
